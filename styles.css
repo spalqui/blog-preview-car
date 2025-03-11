@@ -10,6 +10,7 @@
 }
 
 body {
+    margin: 0;
     background-color: var(--yellow);
 }
 
@@ -23,32 +24,37 @@ main {
 
 .post__container {
     background-color: var(--white);
-    padding: 25px;
+    padding: 20px;
     margin: 30px;
-    border-radius: 10px;
+    border-radius: 20px;
     border: 2px solid var(--gray-950);
+    min-width: 315px;
+    max-width: 375px;
+    box-shadow: 10px 10px 0px var(--gray-950);
 }
 
 .post__image {
+    width: 100%;
     border-radius: 10px;
 }
 
 .post__tag {
     background-color: var(--yellow);
     font-weight: 800;
-    margin: 25px 0 15px 0;
-    padding: 2px 10px;
+    margin-top: 20px;
+    padding: 5px 12px;
     border-radius: 8px;
+    display: inline-block;
 }
 
 .post__published-date {
     color: var(--gray-950);
     font-size: 16px;
-    margin-bottom: 15px;
 }
 
 .post__title {
     color: var(--gray-950);
+    font-size: 1.17em;
     font-weight: 800;
     margin-bottom: 15px;
 }
@@ -56,7 +62,7 @@ main {
 .post__content {
     color: var(--gray-500);
     font-size: 16px;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
 }
 
 .post__author {
@@ -74,4 +80,10 @@ main {
     color: var(--gray-950);
     font-weight: 800;
     font-size: 16px;
+}
+
+@media (min-width: 376px) {
+    .post__title {
+        font-size: 1.5em;
+    }
 }
