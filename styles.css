@@ -59,6 +59,11 @@ main {
     margin-bottom: 15px;
 }
 
+.post__title:hover {
+    cursor: pointer;
+    color: var(--yellow);
+}
+
 .post__content {
     color: var(--gray-500);
     font-size: 16px;
